@@ -8,6 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import PokerGame.Card;
+import PokerGame.PokerPlayer;
 
 
 
@@ -44,6 +45,14 @@ public class GameTests {
 	
 	@Test
 	public void testPlayers() {
+		PokerPlayer myPlayer = new PokerPlayer();
+		//TESTING setPlayer()
+		//set player data form an input string
+		myPlayer.setPlayer("1 TwoHearts ThreeHearts FourHearts FiveHearts SixHearts");
+		//checks that the data was all set correctly
+		assertEquals("TwoHearts", myPlayer.getCard(0).toString());
+		assertEquals("SixHearts", myPlayer.getCard(4).toString());
+		assertEquals("1", myPlayer.getID());
 	}
 
 }

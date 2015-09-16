@@ -30,13 +30,13 @@ public class GameTests {
 		assertEquals("JackSpades", testCard.toString());
 		
 		//setCard(String) test1
-		//assertEquals(0, testCard.setCard("TwoSpades"));
+		assertEquals(0, testCard.setCard("TwoSpades"));
 		
 		//setCard(String) test2
-		//assertEquals(-1, testCard.setCard("OneSpades"));
+		assertEquals(-1, testCard.setCard("OneSpades"));
 		
 		//setCard(String) test3
-		//assertEquals(-2, testCard.setCard("TwoHeads"));
+		assertEquals(-2, testCard.setCard("TwoHeads"));
 	}
 
 }
